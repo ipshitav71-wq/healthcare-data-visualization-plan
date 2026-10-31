@@ -1,0 +1,849 @@
+{
+ "flow": {
+  "raw": 25583,
+  "after_dup": 25430,
+  "dups": 153,
+  "died": 439,
+  "hospice": 183,
+  "transfer": 341,
+  "los_missing": 199,
+  "final": 24268
+ },
+ "missing": {
+  "income": 1662,
+  "comorb": 596,
+  "medrec": 995
+ },
+ "missing_pct": {
+  "income": 6.8,
+  "comorb": 2.5,
+  "medrec": 4.1
+ },
+ "n": 24268,
+ "n_patients": 16968,
+ "events": 3524,
+ "rate": 14.5,
+ "months": [
+  "Sep 2024",
+  "Oct 2024",
+  "Nov 2024",
+  "Dec 2024",
+  "Jan 2025",
+  "Feb 2025",
+  "Mar 2025",
+  "Apr 2025",
+  "May 2025",
+  "Jun 2025",
+  "Jul 2025",
+  "Aug 2025",
+  "Sep 2025",
+  "Oct 2025",
+  "Nov 2025",
+  "Dec 2025",
+  "Jan 2026",
+  "Feb 2026",
+  "Mar 2026",
+  "Apr 2026",
+  "May 2026",
+  "Jun 2026",
+  "Jul 2026",
+  "Aug 2026"
+ ],
+ "table1": [
+  [
+   "Age, years: mean (SD)",
+   "60.0 (16.7)",
+   "64.0 (16.4)",
+   "59.3 (16.7)",
+   "<0.001"
+  ],
+  [
+   "Male",
+   "47.6%",
+   "49.0%",
+   "47.4%",
+   "0.093"
+  ],
+  [
+   "Rural residence",
+   "29.8%",
+   "36.8%",
+   "28.6%",
+   "<0.001"
+  ],
+  [
+   "Lowest income group",
+   "31.1%",
+   "34.4%",
+   "30.5%",
+   "<0.001"
+  ],
+  [
+   "Comorbidities: mean (SD)",
+   "1.2 (1.2)",
+   "1.6 (1.4)",
+   "1.1 (1.1)",
+   "<0.001"
+  ],
+  [
+   "Admissions in prior 12 months: mean (SD)",
+   "0.6 (0.9)",
+   "0.9 (1.0)",
+   "0.6 (0.8)",
+   "<0.001"
+  ],
+  [
+   "Length of stay, days: median (IQR)",
+   "4 (2-5)",
+   "4 (2-5)",
+   "3 (2-5)",
+   "<0.001"
+  ],
+  [
+   "Weekend discharge",
+   "21.5%",
+   "24.9%",
+   "20.9%",
+   "<0.001"
+  ],
+  [
+   "Discharged to facility",
+   "5.4%",
+   "7.7%",
+   "5.0%",
+   "<0.001"
+  ],
+  [
+   "Follow-up completed within 7 days",
+   "54.5%",
+   "37.3%",
+   "57.4%",
+   "<0.001"
+  ],
+  [
+   "Medication reconciliation done",
+   "74.6%",
+   "70.3%",
+   "75.3%",
+   "<0.001"
+  ]
+ ],
+ "n_a": 3524,
+ "n_b": 20744,
+ "pbar": 14.4,
+ "first_month_rate": 13.8,
+ "signal_months": [],
+ "n_signals": 0,
+ "run_start": null,
+ "run_len": 0,
+ "pbarD": 14.5,
+ "signal_months_D": [
+  "Aug 2026"
+ ],
+ "n_signals_D": 1,
+ "run_start_D": null,
+ "run_len_D": 0,
+ "D_above_last6": 5,
+ "D_last6_monthly": [
+  13.8,
+  18.1,
+  16.8,
+  18.8,
+  16.3,
+  23.5
+ ],
+ "maxD": 23.5,
+ "maxD_month": "Aug 2026",
+ "rate_first12": 14.4,
+ "rate_early18": 14.5,
+ "rate_last6": 14.5,
+ "chi_last6_p": "0.993",
+ "rate_last3": 15.0,
+ "trend_or": 1.001,
+ "trend_ci": [
+  0.996,
+  1.006
+ ],
+ "trend_p": "0.687",
+ "hospital_rates": {
+  "A": 14.3,
+  "B": 14.1,
+  "C": 14.1,
+  "D": 15.7
+ },
+ "hospital_change": {
+  "A": [
+   14.2,
+   14.6
+  ],
+  "B": [
+   14.3,
+   13.6
+  ],
+  "C": [
+   14.7,
+   12.2
+  ],
+  "D": [
+   15.0,
+   18.0
+  ]
+ },
+ "fu_ABC_early": 55.7,
+ "fu_D_early": 55.9,
+ "fu_D_last6": 30.4,
+ "fu_ABC_last6": 56.9,
+ "fu_overall_first": 55.8,
+ "fu_overall_last6": 51.3,
+ "fu_D_m23": 24.8,
+ "ward": {
+  "Medical": [
+   15.8,
+   15.0,
+   16.6,
+   8179
+  ],
+  "Respiratory": [
+   15.7,
+   14.5,
+   17.0,
+   3410
+  ],
+  "Cardiac": [
+   15.1,
+   14.1,
+   16.3,
+   3916
+  ],
+  "Surgical": [
+   14.1,
+   13.2,
+   15.1,
+   5341
+  ],
+  "Orthopaedic": [
+   10.2,
+   9.2,
+   11.2,
+   3422
+  ]
+ },
+ "ward_chi_p": "<0.001",
+ "ward_order": [
+  "Medical",
+  "Respiratory",
+  "Cardiac",
+  "Surgical",
+  "Orthopaedic"
+ ],
+ "ward_change": {
+  "Medical": [
+   15.4,
+   16.9
+  ],
+  "Respiratory": [
+   15.6,
+   15.9
+  ],
+  "Cardiac": [
+   15.7,
+   13.6
+  ],
+  "Surgical": [
+   14.3,
+   13.5
+  ],
+  "Orthopaedic": [
+   10.2,
+   10.2
+  ]
+ },
+ "fu_no": [
+  20.0,
+  19.2,
+  20.7
+ ],
+ "fu_yes": [
+  10.0,
+  9.5,
+  10.5
+ ],
+ "rural_rate": [
+  13.1,
+  17.9
+ ],
+ "inc_rate": {
+  "high": 12.8,
+  "low": 16.1,
+  "mid": 14.5
+ },
+ "fu_rate_by_rural": {
+  "0": 58.2,
+  "1": 45.6
+ },
+ "fu_rate_by_inc": {
+  "high": 61.2,
+  "low": 47.4,
+  "mid": 56.6
+ },
+ "age_rate": {
+  "18-44": 9.6,
+  "45-64": 13.7,
+  "65-79": 16.0,
+  "80+": 21.4
+ },
+ "prior_rate": {
+  "0": 11.6,
+  "3plus": 28.7
+ },
+ "prior3_share": 3.6,
+ "or_rows": [
+  [
+   "Income: lowest vs highest",
+   1.11,
+   1.0,
+   1.23,
+   "0.046"
+  ],
+  [
+   "Income: middle vs highest",
+   1.08,
+   0.98,
+   1.19,
+   "0.134"
+  ],
+  [
+   "Income: unknown vs highest",
+   0.93,
+   0.79,
+   1.1,
+   "0.414"
+  ],
+  [
+   "Discharge: facility vs home",
+   1.23,
+   1.06,
+   1.42,
+   "0.007"
+  ],
+  [
+   "Discharge: home with services vs home",
+   1.15,
+   1.04,
+   1.28,
+   "0.008"
+  ],
+  [
+   "Ward: Cardiac vs Surgical",
+   1.08,
+   0.96,
+   1.22,
+   "0.192"
+  ],
+  [
+   "Ward: Medical vs Surgical",
+   1.11,
+   1.0,
+   1.23,
+   "0.042"
+  ],
+  [
+   "Ward: Orthopaedic vs Surgical",
+   0.7,
+   0.61,
+   0.8,
+   "<0.001"
+  ],
+  [
+   "Ward: Respiratory vs Surgical",
+   1.13,
+   1.0,
+   1.28,
+   "0.059"
+  ],
+  [
+   "Medication reconciliation unknown (vs not)",
+   0.82,
+   0.68,
+   1.0,
+   "0.054"
+  ],
+  [
+   "Medication reconciliation done (vs not)",
+   0.75,
+   0.68,
+   0.81,
+   "<0.001"
+  ],
+  [
+   "Hospital B vs A",
+   0.99,
+   0.9,
+   1.09,
+   "0.839"
+  ],
+  [
+   "Hospital C vs A",
+   1.0,
+   0.9,
+   1.12,
+   "0.949"
+  ],
+  [
+   "Hospital D vs A",
+   1.03,
+   0.93,
+   1.15,
+   "0.541"
+  ],
+  [
+   "Age (per 10 years)",
+   1.1,
+   1.07,
+   1.13,
+   "<0.001"
+  ],
+  [
+   "Male sex",
+   1.08,
+   1.01,
+   1.17,
+   "0.034"
+  ],
+  [
+   "Rural residence",
+   1.33,
+   1.23,
+   1.44,
+   "<0.001"
+  ],
+  [
+   "Comorbidities (per additional)",
+   1.21,
+   1.17,
+   1.25,
+   "<0.001"
+  ],
+  [
+   "Prior admissions (per additional)",
+   1.23,
+   1.18,
+   1.28,
+   "<0.001"
+  ],
+  [
+   "Length of stay over 7 days",
+   1.47,
+   1.31,
+   1.65,
+   "<0.001"
+  ],
+  [
+   "Weekend discharge",
+   1.25,
+   1.15,
+   1.36,
+   "<0.001"
+  ],
+  [
+   "Follow-up within 7 days",
+   0.45,
+   0.42,
+   0.48,
+   "<0.001"
+  ]
+ ],
+ "or_unmapped": [],
+ "trend_b_unadj": 0.001,
+ "trend_b_adjfu": -0.0008,
+ "trend_attenuation_pct": 180.0,
+ "D_attenuation_pct": 102.0,
+ "D_chi_p": "0.012",
+ "D_rates": [
+  15.0,
+  18.0
+ ],
+ "ABC_rates": [
+  14.4,
+  13.6
+ ],
+ "D_n_last6": 1272,
+ "scn_n": 1272,
+ "scn_exp_obs": 226,
+ "scn_exp_scn": 193,
+ "scn_averted_6m": 33,
+ "scn_averted_year": 65,
+ "scn_q": 37.0,
+ "scn_bed_days": 325,
+ "scn_averted_year_half": 37,
+ "medrec_yes": 74.6,
+ "medrec_D": 66.1,
+ "medrec_ABC": 76.9,
+ "weekend_share": 21.5,
+ "los7_share": 9.2,
+ "weekend_rate": [
+  13.9,
+  16.8
+ ],
+ "los7_rate": [
+  13.9,
+  20.4
+ ],
+ "hosp_share": {
+  "A": 30.2,
+  "B": 28.4,
+  "C": 20.1,
+  "D": 21.2
+ },
+ "rural_share": 29.8,
+ "age65_share": 40.1,
+ "auc_final_name": "",
+ "n_train": 18254,
+ "n_val": 3001,
+ "n_test": 3013,
+ "ev_test": 452,
+ "rate_test": 15.0,
+ "ev_train": 2650,
+ "val_table": [
+  [
+   "LR C=0.01",
+   0.3912,
+   0.639
+  ],
+  [
+   "LR C=0.1",
+   0.3912,
+   0.64
+  ],
+  [
+   "LR C=1",
+   0.3912,
+   0.64
+  ],
+  [
+   "LR C=10",
+   0.3912,
+   0.64
+  ],
+  [
+   "GB lr=0.05 d=3",
+   0.3929,
+   0.636
+  ],
+  [
+   "GB lr=0.05 d=4",
+   0.3943,
+   0.63
+  ]
+ ],
+ "best_lr": "LR C=10",
+ "best_gb": "GB lr=0.05 d=3",
+ "final_model": "LR C=10",
+ "auc_lr": [
+  0.644,
+  0.619,
+  0.674
+ ],
+ "auprc_lr": 0.258,
+ "brier_lr": 0.1224,
+ "auc_gb": [
+  0.646,
+  0.622,
+  0.673
+ ],
+ "auprc_gb": 0.252,
+ "brier_gb": 0.1228,
+ "brier_null": 0.1275,
+ "cal_slope": [
+  1.05,
+  0.85,
+  1.25
+ ],
+ "cal_intercept": 0.04,
+ "oe_ratio": 1.04,
+ "thr": 0.189,
+ "flag_share_test": 19.2,
+ "sens20": 33.6,
+ "ppv20": 26.3,
+ "lift20": 1.76,
+ "nnc20": 3.8,
+ "spec20": 83.4,
+ "gains": [
+  [
+   "5%",
+   150,
+   "10.8%",
+   "32.7%",
+   "2.18",
+   "3.1"
+  ],
+  [
+   "10%",
+   301,
+   "19.9%",
+   "29.9%",
+   "1.99",
+   "3.3"
+  ],
+  [
+   "20%",
+   602,
+   "36.1%",
+   "27.1%",
+   "1.80",
+   "3.7"
+  ],
+  [
+   "30%",
+   903,
+   "47.1%",
+   "23.6%",
+   "1.57",
+   "4.2"
+  ]
+ ],
+ "nb_at_15": [
+  0.0316,
+  0.0
+ ],
+ "nb_at_20": [
+  0.016,
+  -0.0625
+ ],
+ "subgroup": [
+  [
+   "Urban",
+   2103,
+   289,
+   19.2,
+   35.6,
+   30.3,
+   41.3,
+   0.659,
+   0.95
+  ],
+  [
+   "Rural",
+   910,
+   163,
+   19.1,
+   30.1,
+   23.5,
+   37.5,
+   0.618,
+   1.24
+  ],
+  [
+   "Income: highest",
+   769,
+   101,
+   21.5,
+   41.6,
+   32.5,
+   51.3,
+   0.652,
+   0.88
+  ],
+  [
+   "Income: middle",
+   1107,
+   182,
+   18.8,
+   32.4,
+   26.0,
+   39.5,
+   0.646,
+   1.15
+  ],
+  [
+   "Income: lowest",
+   944,
+   140,
+   16.4,
+   26.4,
+   19.8,
+   34.3,
+   0.633,
+   1.05
+  ],
+  [
+   "Age 18-64",
+   1808,
+   240,
+   7.7,
+   14.6,
+   10.7,
+   19.6,
+   0.612,
+   1.1
+  ],
+  [
+   "Age 65+",
+   1205,
+   212,
+   36.3,
+   55.2,
+   48.5,
+   61.7,
+   0.674,
+   0.97
+  ],
+  [
+   "Female",
+   1584,
+   240,
+   19.1,
+   30.8,
+   25.3,
+   36.9,
+   0.637,
+   1.06
+  ],
+  [
+   "Male",
+   1429,
+   212,
+   19.2,
+   36.8,
+   30.6,
+   43.5,
+   0.655,
+   1.01
+  ],
+  [
+   "Hospital A",
+   887,
+   126,
+   17.8,
+   33.3,
+   25.7,
+   41.9,
+   0.667,
+   1.01
+  ],
+  [
+   "Hospital B",
+   861,
+   122,
+   15.8,
+   24.6,
+   17.8,
+   32.9,
+   0.621,
+   1.02
+  ],
+  [
+   "Hospital C",
+   623,
+   77,
+   19.3,
+   41.6,
+   31.2,
+   52.7,
+   0.659,
+   0.84
+  ],
+  [
+   "Hospital D",
+   642,
+   127,
+   25.4,
+   37.8,
+   29.8,
+   46.5,
+   0.62,
+   1.28
+  ]
+ ],
+ "overall_sens": 33.6,
+ "importance": [
+  [
+   "prior_adm",
+   0.0264
+  ],
+  [
+   "comorb",
+   0.0241
+  ],
+  [
+   "age",
+   0.018
+  ],
+  [
+   "ward",
+   0.0132
+  ],
+  [
+   "medrec_cat",
+   0.0089
+  ],
+  [
+   "weekend",
+   0.0039
+  ],
+  [
+   "dest",
+   0.0025
+  ],
+  [
+   "los",
+   0.0022
+  ],
+  [
+   "male",
+   0.0016
+  ],
+  [
+   "comorb_missing",
+   -0.0001
+  ],
+  [
+   "hospital",
+   -0.0005
+  ]
+ ],
+ "auc_final": [
+  0.644,
+  0.619,
+  0.674
+ ],
+ "auprc_final": 0.258,
+ "brier_final": 0.1224,
+ "net_min": 12.4,
+ "net_max": 16.7,
+ "net_ucl": 17.7,
+ "net_lcl": 11.1,
+ "D_aug": {
+  "n": 238,
+  "events": 56,
+  "rate": 23.5,
+  "ucl": 21.3,
+  "lcl": 7.6
+ },
+ "D_min": 11.6,
+ "ex_patients": [
+  [
+   "Patient 1: 74-year-old man, Medical ward, Hospital D, 4 comorbidities, 3 prior admissions, 9-day stay, weekend discharge with home services, no medication reconciliation",
+   49.1,
+   true
+  ],
+  [
+   "Patient 2: 58-year-old woman, Surgical ward, Hospital A, 2 comorbidities, 1 prior admission, 5-day stay, weekday discharge home, medication reconciliation done",
+   14.3,
+   false
+  ],
+  [
+   "Patient 3: 36-year-old woman, Orthopaedic ward, Hospital B, no comorbidities, no prior admissions, 3-day stay, discharged home, medication reconciliation done",
+   4.8,
+   false
+  ]
+ ],
+ "cw_auc": 0.644,
+ "cw_mean_pred": 47.8,
+ "cw_obs": 15.0,
+ "cw_cal_int": -1.73,
+ "cw_cal_slope": 1.03,
+ "cw_brier": 0.2325,
+ "plain_mean_pred": 14.5,
+ "n_pos_weight": 5.9
+}

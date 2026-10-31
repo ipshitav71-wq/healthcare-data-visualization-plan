@@ -1,44 +1,43 @@
-# Healthcare Data Visualization Plan
+# Reducing 30-Day Hospital Readmissions: Analytical Report (Simulated Data)
 
-A plan for turning raw healthcare data into clear, accessible dashboards and reports that non-technical stakeholders (hospital executives, ward managers, quality leads and public-health officers) can use to make decisions.
+A hypothetical healthcare analytics project that shows how routine hospital data can be turned into evidence for strategy and policy decisions.
 
 **Author:** Ipshita Verma
 
-## What this project contains
+> **Important:** All data are **simulated**. No real patients, hospitals or organisations are represented. The results demonstrate a method and must not be used as real-world estimates.
 
-- A full written plan (Word and PDF) covering key healthcare metrics, tool selection and justification, the raw-data-to-visual process, a chart selection guide, user-centred design and accessibility, governance, and an implementation roadmap.
-- Three dashboard mock-ups (hospital operations, clinical quality and safety, population health) and a one-page report wireframe.
-- The Python script used to generate the mock-up images.
+## What this project does
 
-> **Note:** All data in the mock-ups is synthetic and for illustration only. It does not represent any real hospital or population.
-
-## Preview
-
-![Operations dashboard mock-up](images/fig2_exec.png)
-![Quality dashboard mock-up](images/fig3_quality.png)
+1. Simulates a four-hospital discharge dataset (about 25,000 records, Sep 2024 - Aug 2026) with realistic problems such as duplicates and missing values.
+2. Cleans the data and reports every exclusion.
+3. Analyses trends (control charts), drivers (logistic regression), and the role of 7-day follow-up.
+4. Builds and validates a readmission risk model (temporal split, calibration, decision curve) and audits it for fairness.
+5. Estimates the possible impact of restoring follow-up and turns the findings into recommendations.
 
 ## Folder structure
 
-| Folder | Contents |
+| Path | Contents |
 |---|---|
-| `docs/` | The full plan as `.docx` and `.pdf` |
-| `images/` | Workflow diagram, dashboard mock-ups, report wireframe, colour palette |
-| `scripts/` | `figs.py`: generates the images from synthetic data |
+| `docs/` | Full report (`.docx` and `.pdf`) |
+| `analysis.py` | One script: simulation, cleaning, analysis, model, figures, results |
+| `data/` | Simulated raw extract and cleaned analytic cohort (CSV) |
+| `images/` | Figures used in the report |
+| `results.json` | Every number reported, saved by the script |
 
-## How to run the script
+## How to reproduce
 
 ```bash
 pip install -r requirements.txt
-cd scripts
-python figs.py
+python analysis.py
 ```
 
-The images are saved in the `images/` folder.
+Random seeds are fixed, so the script recreates the same data, tables and figures.
 
-## Tools covered in the plan
+## Preview
 
-Power BI (dashboards), Python with pandas and matplotlib (data preparation and statistical charts), PostgreSQL (data storage and modelling).
+![Control charts](images/f1_trend.png)
+![Follow-up and readmission](images/f3_followup.png)
 
-## Accessibility
+## Tools
 
-The design uses a colour-blind-safe palette with shape and text cues in addition to colour, follows WCAG 2.1 AA guidance, and includes plain-language headlines on every chart.
+Python (pandas, SciPy, statsmodels, scikit-learn, matplotlib).
